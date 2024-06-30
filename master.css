@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-style: italic;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    filter: blur(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: -1;
+    background-image:
+    linear-gradient(to right, #01022d , #000000ed)
+}
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+    background-image:
+    linear-gradient(to right, #01022de5 30%, #0000009c),
+    url(download.webp);
+    background-size: cover;
+    background-position: center;
+}
+.container:hover {
+    background-image:
+    linear-gradient(to right, #01022de5 30%, transparent),
+    url(download.webp);
+}
+header {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    flex: 1.1;
+    font-size: 30px;
+    padding-right: 15px;
+}
+@media (max-width: 767px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    header {
+        flex-direction: column;
+    }
+    header .logo {
+        padding-bottom: 10px;
+    }
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex: 1.5;  
+}
+header ul a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header ul a:hover {
+    text-decoration: underline 3px;
+}
+.container .content {
+    color: white;
+    margin-top: 22px;
+}
+.container .content h1 {
+    margin-bottom: 10px;
+    font-size: 100px;
+}
+.container .content p {
+    max-width: 400px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+.container .content a {
+    padding: 8px 12px;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-top: 13px;
+    margin-left: 5px;
+    display: block;
+    width: fit-content;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+.container .content a:hover {
+    color: white;
+    background-image: linear-gradient(to right, #01022de5 30%, #0000009c);
+    border: 1px solid white;
+}
+@media (max-width: 767px) {
+    .container .content {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .container .content h1 {
+        font-size: 70px;
+    }
+    .container .content p {
+        max-width: 100%;
+    }
+    .container .content a {
+        margin: 10px auto;
+    }
+}
